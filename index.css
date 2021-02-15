@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*container*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+@media only screen and (min-device-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*container end*/
+
+/*header*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+.header__logo{
+    object-fit: contain;
+    height: 5rem;
+}
+.header__text {
+    color: #e2e2e2;
+    font-size: 4rem;
+    flex: 10;
+}
+.btn {
+    background: none;
+    border: none;
+}
+.btn:focus {
+    border: none;
+    outline: none;
+}
+@media only screen and (min-device-width : 768px)   {
+    .header__logo{
+        height: 3rem;
+    }
+    .header__text {
+        font-size: 2rem;
+    }
+    .fa-times {
+        font-size: 2rem;
+    }
+}
+/*header end*/
+
+/*user*/
+.user {
+    background-color: #ffaa00;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    text-align: center;
+    display: table;
+    margin: 2rem auto 1rem auto;
+}
+.user__icon {
+    vertical-align: middle;
+    display: table-cell !important;
+    text-align: center;
+    color: white;
+    font-size: 7rem;
+}
+@media only screen and (min-device-width : 768px)   {
+    .user__icon {
+        font-size: 4rem;
+    }
+    .user {
+        height: 6rem;
+        width: 6rem;
+        margin-top: 1rem;
+    }
+}
+/*intro*/
+.intro{
+    text-align: center;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro__text {
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 0.2em;
+}
+.intro__earnings {
+    font-size: 2em;
+    color: #b7b7b7;
+    font-weight: bolder;
+}
+
+@media only screen and (min-device-width : 768px)   {
+    .intro__text {
+        font-size: 2em;
+        margin-bottom: 0.2em;
+    }
+    .intro__earnings {
+        font-size: 1em;
+    }
+}
+/*intro end*/
+
+/*earnings*/
+.earnings{
+    text-align: center;
+    display: table;
+    margin: 8rem auto 2rem auto;
+}
+.earnings__current {
+    font-size: 4em;
+    font-weight: bolder;
+    margin-bottom: 0.4em;
+}
+.earnings__total {
+    font-size: 5em;
+    color: #00d068;
+    margin-bottom: 0.2em;
+}
+.earnings__points {
+    font-size: 1em;
+    color: #003bff;
+}
+.earnings__cashout {
+    font-size: 1.5em;
+    margin-top: 1.5rem;
+}
+.earnings__threshold {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    background-color: #b7b7b7;
+    width: 50rem;
+    height: 3.5rem;
+    display: inline-block;
+}
+.earnings__threshold_indicator {
+    background-color: #00d068;
+    width: 29.7rem;
+    height: 3.5rem;
+}
+.earnings__threshold_status {
+    font-size: 0.8em;
+    color: #b7b7b7;
+    margin-bottom: 3rem;
+    font-weight: bolder;
+}
+@media only screen and (min-device-width : 768px)   {
+    .earnings{
+        margin: 2rem auto 0 auto;
+    }
+    .earnings__current {
+        font-size: 1.5em;
+    }
+    .earnings__total {
+        font-size: 2em;
+    }
+    .earnings__cashout {
+        font-size: 1em;
+        margin-top: 1rem;
+    }
+    .earnings__threshold {
+        margin-top: 1rem;
+        width: 35rem;
+        height: 2.5rem;
+    }
+    .earnings__threshold_indicator {
+        height: 2.5rem;
+        width: 20.65rem;
+    }
+    .earnings__threshold_status {
+        margin-bottom: 2rem;
+    }
+}
+/*earnings end*/
+
+.ruler {
+    color: #b7b7b7;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #b7b7b7;
+}
+
+/*invite*/
+.invite {
+    text-align: center;
+    display: table;
+    margin: 5rem auto 2rem auto;
+}
+.invite__text {
+    font-size: 2.5em;
+    font-weight: normal;
+}
+.invite__code {
+    margin-top: 0.5em;
+    color: #b7b7b7;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.invite__code > span {
+    color: #ffaa00;
+}
+.invite-icons {
+    display: inline-flex;
+}
+.invite-icon {
+    display: inline-block;
+    margin: 1.5rem;
+    border-radius: 50%;
+    padding: 1em;
+}
+.invite-icon >a {
+    text-decoration: none;
+}
+.twitter {
+    background-color: #00baff;
+}
+.email {
+    background-color: #6c00ff;
+}
+.facebook {
+    padding: 0;
+}
+.fa-facebook {
+    color: #0051eb;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-envelope {
+    color: white;
+}
+
+@media only screen and (min-device-width : 768px)   {
+    .invite {
+        margin: 2rem auto 1rem auto;
+    }
+    .invite__text {
+        font-size: 1.5em;
+    }
+    .invite__code {
+        margin-top: 0.2em;
+        font-size: 1rem;
+    }
+}
+/*invite end*/
+/*sign out*/
+.sign-out {
+    text-align: center;
+    display: table;
+    margin: 4rem auto 3rem auto;
+    width:70%;
+}
+.sign-out__btn {
+    background-color: #d95858;
+    height: 10rem;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1em;
+    border-radius: 0.3em;
+}
+@media only screen and (min-device-width : 768px)   {
+    .sign-out {
+        margin: 2rem auto 1rem auto;
+
+    }
+    .sign-out__btn {
+        height: 5rem;
+        font-size: 2em;
+    }
+}
+/*sign out end*/
